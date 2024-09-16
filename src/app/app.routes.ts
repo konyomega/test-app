@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { app } from '../../server';
 import { UserProfileComponent } from './user-components/user-profile/user-profile.component';
 import { LoginComponentComponent } from './login-component/login-component.component';
-import { NewuserComponent } from './sign-up/newuser/newuser.component';
-
+import { NewuserComponent } from './sign-up/newuser/newuser.component'
 export const routes: Routes = [{
 
 path:'',redirectTo:'login-component',pathMatch:'full'},

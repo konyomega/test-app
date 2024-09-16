@@ -1,9 +1,10 @@
-import { NgModule } from "@angular/core";
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from "@angular/core";
 import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatInputModule } from '@angular/material/input';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from "@angular/common/http";
+import { provideHttpClient } from "@angular/common/http";
 import { Route } from "@angular/router";
 import { AppRoutingModule, routes } from "./app.routes";
 import { UserProfileComponent } from "./user-components/user-profile/user-profile.component";
@@ -15,11 +16,13 @@ import { UserFooterComponent } from "./widgets/footer /user-footer/user-footer.c
 import { AdsenseModule } from 'ng2-adsense';
 import { NewuserComponent } from "./sign-up/newuser/newuser.component";
 import { CommercialsComponent } from "./widgets/advertisements/commercials/commercials.component";
+import { Services } from "./services";
 @NgModule({
     declarations: [
         
       ],
       imports: [
+        
         AppComponent,
         FormsModule,
         ReactiveFormsModule,
@@ -34,10 +37,12 @@ import { CommercialsComponent } from "./widgets/advertisements/commercials/comme
         UserFooterComponent,
         AdsenseModule.forRoot(),
         NewuserComponent,
-        CommercialsComponent
+        CommercialsComponent,
+       
+        
       ],
-      providers: [],
+      providers: [provideHttpClient(),Services],
       bootstrap: [],
-      
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule{}
