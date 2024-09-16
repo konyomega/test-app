@@ -13,6 +13,8 @@ import { ModalScreenComponent } from "./widgets/modal/modal-screen/modal-screen.
 import { UserNavbarComponent } from "./widgets/navbar/userProfileHeader/user-navbar/user-navbar.component";
 import { UserFooterComponent } from "./widgets/footer /user-footer/user-footer.component";
 import { AdsenseModule } from 'ng2-adsense';
+import { NewuserComponent } from "./sign-up/newuser/newuser.component";
+import { CommercialsComponent } from "./widgets/advertisements/commercials/commercials.component";
 @NgModule({
     declarations: [
         
@@ -30,7 +32,9 @@ import { AdsenseModule } from 'ng2-adsense';
         ModalScreenComponent,
         UserNavbarComponent,
         UserFooterComponent,
-        AdsenseModule.forRoot()
+        AdsenseModule.forRoot(),
+        NewuserComponent,
+        CommercialsComponent
       ],
       providers: [],
       bootstrap: [],
