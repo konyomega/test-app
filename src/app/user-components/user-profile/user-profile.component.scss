@@ -1,0 +1,29 @@
+
+.content {
+    background: #f7f7f7;
+    height: auto;
+    width: auto;
+    font-family: sans-serif;
+
+
+    .news-content {
+        width: 580px;
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: inset 0px 0px 3px 0px #ded6d6;
+        margin: 0px auto;
+        margin-top: 13px;
+
+        .news-section {
+
+            .news-body {
+                .header-text {
+                    font-family: sans-serif;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}

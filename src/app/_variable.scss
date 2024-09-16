@@ -1,0 +1,26 @@
+//settings for the 
+$base-font-size:13px;
+$base-line-height:19px;
+$em-base:$base-font-size;
+
+//spacing
+$base-spacing-unit:$base-line-height;
+$base-spacing-unit--tiny:round($base-spacing-unit / 4);
+$base-spacing-unit--small:round($base-spacing-unit / 2);
+$base-spacing-unit--large:round($base-spacing-unit * 2);
+$base-spacing-unit--huge:round($base-spacing-unit *4);
+
+//layout
+$layout-spacing--small:20px;
+$layout-spacing--large:30px;
+
+$container-width:1040px;
+$container-width--slim:$container-width - ($layout-spacing--large * 2);
+$layout-spacing--large:$container-width + ($layout-spacing--large *2);
+
+$colors:(
+    pageback:#f7f7f7,
+    navback:#f5f5f5,
+    sectionborder:#ebeaea,
+    newsback:#ffffff
+)

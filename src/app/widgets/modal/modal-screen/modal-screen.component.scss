@@ -1,0 +1,40 @@
+.content {
+    position: fixed;
+    background: black;
+    overflow-y: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: 1005;
+    height: 155%;
+    opacity: 0.8;
+.-hidden{
+    display: none;
+}
+    .main-section {
+        display: flex;
+        flex-direction: row;
+
+        .news-section {
+            box-sizing: content-box;
+            width: 254px;
+            margin: 26px;
+            padding: 0px;
+            background: #313231;
+            height: 203px;
+        }
+    }
+
+    .button-dismiss {
+        float: right;
+        margin: 15px;
+        cursor: pointer;
+        border: none;
+
+        .i {
+            font-size: 2.625rem;
+        }
+    }
+}
