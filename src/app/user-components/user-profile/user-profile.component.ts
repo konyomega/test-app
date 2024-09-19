@@ -21,8 +21,8 @@ import { Services} from '../../services';
 
 export class UserProfileComponent implements OnInit  {
   arr: any;
- 
-constructor(public userServices: Services){}
+ res:any
+constructor(public userServices: Services, public userInfo:Services){}
   ngOnInit(): void {
     this.arr= {
       "name":"kunal",
@@ -31,6 +31,8 @@ constructor(public userServices: Services){}
     }
     // console.log(arr,"int the user profile");
    this.userServices.add(this.arr);
+   this.userInfo.get(this.res)
+   console.log('in the user profile',this.res);
   }
 
   
