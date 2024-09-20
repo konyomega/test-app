@@ -10,7 +10,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ModalScreenComponent implements OnInit{
   ngOnInit(){
-  this.isButtonclicked();
+  // this.isButtonclicked();
   }
 constructor (private modalService: NgbModal){
   this.modalService.dismissAll();
@@ -19,20 +19,22 @@ constructor (private modalService: NgbModal){
 isChkBoxShown = true;
 cancelClick()
 {
-  this.isChkBoxShown = !this.isChkBoxShown;
-  sessionStorage.setItem('isChkBoxShown','clicked');
+  // this.isChkBoxShown = !this.isChkBoxShown;
+  // sessionStorage.setItem('isChkBoxShown','clicked');
+  close();
   
 }
 
- isButtonclicked(){
-let isButtonclicked= sessionStorage.getItem('isChkBoxShown');
-if(isButtonclicked === 'clicked'){
-  this.isChkBoxShown = !this.isChkBoxShown;
-}
-else{
-  this.isChkBoxShown = true;
-}
+//  isButtonclicked(){
+// // let isButtonclicked= sessionStorage.getItem('isChkBoxShown');
+// // if(isButtonclicked === 'clicked'){
+// //   this.isChkBoxShown = !this.isChkBoxShown;
+//   close(id);
+// }
+// // else{
+// //   this.isChkBoxShown = true;
+// // }
 
- }
+//  }
 
 }
