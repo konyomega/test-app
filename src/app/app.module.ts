@@ -12,7 +12,7 @@ import { LoginComponentComponent } from "./login-component/login-component.compo
 import { CommonModule } from "@angular/common";
 import { ModalScreenComponent } from "./widgets/modal/modal-screen/modal-screen.component";
 import { UserNavbarComponent } from "./widgets/navbar/userProfileHeader/user-navbar/user-navbar.component";
-import { UserFooterComponent } from "./widgets/footer /user-footer/user-footer.component";
+import { UserFooterComponent } from "./widgets/footer/user-footer/user-footer.component";
 import { AdsenseModule } from 'ng2-adsense';
 import { NewuserComponent } from "./sign-up/newuser/newuser.component";
 import { CommercialsComponent } from "./widgets/advertisements/commercials/commercials.component";
