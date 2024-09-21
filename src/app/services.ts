@@ -27,9 +27,12 @@ export class Services {
  };
  get(res:any){
 console.log("get service");
- }
+return this.res; 
+}
+  app:string = "hello world";
  getData(): Observable<string> {
-  return this.http.get<string>(this.apiUrl);
+   return this.http.get<string>(this.app);
+
 }
 
 }

@@ -1,33 +1,27 @@
-<div class="content" id="newsBody" *ngIf="isChkBoxShown">
-    <button type="button" aria-label="close" class="button-dismiss" id="dismissIcon">
-        <i class="fa-duotone fa-solid fa-x" (click)="cancelClick()">X</i>
-        
-    </button>
 
+    <div class="content" *ngIf="!showTemplate">
+        <button type="button" aria-label="close" class="button-dismiss" id="dismissIcon">
+            <i class="fa-duotone fa-solid fa-x" (click)="cancelClick()">X</i>
+        </button>
 
-    <section class="main-section">
+        <section class="main-section">
+            <div class="news-section">
+                <p class="text-heading">
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium suscipit odit, eaque nulla
+                    iure fuga consequatur aliquam rerum impedit, temporibus voluptas doloribus reiciendis quasi quam tempore
+                    est possimus quod. -->
+                    {{res.news}}
+                </p>
+            </div>
+            <div class="news-section">
+                <p>2nd news</p>
+            </div>
+            <div class="news-section">
+                <p>3rd news</p>
+            </div>
+            <div class="news-section">
+                <p>4th news</p>
+            </div>
+        </section>
+    </div>
 
-        <div class="news-section">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium suscipit odit, eaque nulla
-                iure fuga consequatur aliquam rerum impedit, temporibus voluptas doloribus reiciendis quasi quam tempore
-                est possimus quod.
-            </p>
-        </div>
-        <div class="news-section ">
-            <p>
-                2nd news
-            </p>
-        </div>
-        <div class="news-section ">
-            <p>
-                3rd news
-            </p>
-        </div>
-        <div class="news-section ">
-            <p>
-                4th news
-            </p>
-        </div>
-    </section>
-</div>
