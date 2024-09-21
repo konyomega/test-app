@@ -25,8 +25,8 @@ export class Services {
     "email":"kunal@gmail.com",
     "password":"123@"
  };
- get(res:any){
-console.log("get service");
+ getNews(res1:any){
+console.log("get service"+JSON.stringify(res1));
 return this.res; 
 }
   app:string = "hello world";

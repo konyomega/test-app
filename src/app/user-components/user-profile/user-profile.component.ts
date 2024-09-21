@@ -25,14 +25,15 @@ export class UserProfileComponent implements OnInit  {
 constructor(public userServices: Services, public userInfo:Services){}
   ngOnInit(): void {
     this.arr= {
-      "name":"kunal",
+      "name":"going from the user profile",
       "email":"kunal@gmail.com",
       "password":"123@"
     }
     // console.log(arr,"int the user profile");
-   this.userServices.add(this.arr);
-   this.userInfo.get(this.res)
-   console.log('in the user profile',this.res);
+   this.userServices.getData();
+   this.userInfo.getNews(this.arr);
+  
+ 
   }
 
   
